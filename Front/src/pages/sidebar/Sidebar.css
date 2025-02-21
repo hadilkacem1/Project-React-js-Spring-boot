@@ -1,0 +1,73 @@
+/* src/components/Sidebar/Sidebar.css */
+
+/* Conteneur principal du Sidebar */
+.sidebar-container {
+    width: 250px; /* Largeur du Sidebar */
+    height: 146vh; /* Augmentation de la hauteur à 120% de la vue */
+    background-color: #2c3e50; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 1rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    overflow-y: auto; /* Ajout d'une barre de défilement si le contenu dépasse */
+  }
+  
+  /* En-tête du Sidebar */
+  .sidebar-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Liens de navigation */
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espacement entre les liens */
+  }
+  
+  .sidebar-link {
+    color: #fff !important; /* Couleur du texte */
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-link:hover {
+    background-color: #34495e; /* Couleur de fond au survol */
+    color: #fff;
+  }
+  
+  .sidebar-link.active {
+    background-color: #1abc9c; /* Couleur de fond pour l'élément actif */
+    color: #fff;
+  }
+  
+  /* Icônes */
+  .sidebar-icon {
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Séparateur */
+  .sidebar-divider {
+    border-top: 1px solid #444;
+    margin: 1rem 0;
+  }
+  
+  /* Bouton de déconnexion */
+  .sidebar-link.logout {
+    margin-top: auto; /* Aligner en bas */
+    background-color: #e74c3c; /* Couleur de fond pour le bouton de déconnexion */
+  }
+  
+  .sidebar-link.logout:hover {
+    background-color: #c0392b; /* Couleur de fond au survol */
+  }

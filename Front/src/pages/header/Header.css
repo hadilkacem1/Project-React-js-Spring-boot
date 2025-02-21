@@ -1,0 +1,54 @@
+/* src/pages/header/Header.css */
+
+/* Style pour le Navbar */
+.custom-navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    padding: 1rem 0; /* Espacement interne */
+  }
+  
+  /* Style pour le logo ou le nom de l'application */
+  .brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Couleur du texte */
+  }
+  
+  /* Style pour les liens de navigation */
+  .nav-link {
+    font-size: 1rem;
+    color: #555; /* Couleur du texte */
+    margin: 0 0.5rem; /* Espacement entre les liens */
+    transition: color 0.3s ease; /* Transition fluide */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Couleur au survol */
+  }
+  
+  /* Style pour le bouton CTA */
+  .cta-button {
+    margin-left: 1rem; /* Espacement à gauche */
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem; /* Taille du bouton */
+    border-radius: 25px; /* Bords arrondis */
+  }
+  
+  /* Style pour le menu déroulant */
+  .nav-dropdown .dropdown-item {
+    font-size: 0.9rem;
+    color: #555; /* Couleur du texte */
+    transition: background-color 0.3s ease; /* Transition fluide */
+  }
+  
+  .nav-dropdown .dropdown-item:hover {
+    background-color: #f8f9fa; /* Couleur de fond au survol */
+  }
+  
+  /* Style pour le bouton du menu responsive */
+  .navbar-toggle {
+    border: none; /* Supprime la bordure */
+  }
+  
+  .navbar-toggle:focus {
+    outline: none; /* Supprime le contour lors du focus */
+  }

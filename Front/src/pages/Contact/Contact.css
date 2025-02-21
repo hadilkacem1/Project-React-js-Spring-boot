@@ -1,0 +1,131 @@
+/* Styles généraux */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Fond léger */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Largeur réduite */
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .contact-title {
+    text-align: center;
+    color: #2c3e50; /* Couleur sombre et élégante */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .contact-description {
+    text-align: center;
+    color: #7f8c8d; /* Gris doux */
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon .icon {
+    position: absolute;
+    left: 10px;
+    color: #7f8c8d; /* Gris doux */
+    font-size: 1em;
+  }
+  
+  .input-icon input,
+  .input-icon textarea {
+    width: 100%;
+    padding: 8px 8px 8px 35px;
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 6px;
+    font-size: 0.9em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-icon input:focus,
+  .input-icon textarea:focus {
+    border-color: #3498db; /* Bleu doux au focus */
+    outline: none;
+  }
+  
+  .input-icon textarea {
+    resize: vertical;
+    min-height: 100px; /* Hauteur réduite */
+  }
+  
+  .submit-button {
+    padding: 10px 15px;
+    background-color: #3498db; /* Bleu doux */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9; /* Bleu plus foncé au survol */
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .contact-card {
+      padding: 20px;
+    }
+  
+    .contact-title {
+      font-size: 1.5em;
+    }
+  
+    .contact-description {
+      font-size: 0.8em;
+    }
+  
+    .input-icon input,
+    .input-icon textarea {
+      padding: 6px 6px 6px 30px;
+      font-size: 0.8em;
+    }
+  
+    .submit-button {
+      padding: 8px 12px;
+      font-size: 0.8em;
+    }
+  }
